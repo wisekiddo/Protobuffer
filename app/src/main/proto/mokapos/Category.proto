@@ -1,0 +1,16 @@
+syntax = "proto3";
+package mokapos;
+
+message Category {
+    int64 id = 1;
+    string name = 2;
+    string description = 3;
+    int64 business_id = 4;
+    bool is_deleted = 5;
+    int64 created_at = 6;
+    int64 updated_at = 7;
+    int64 outlet_id = 8;
+    string guid = 9;
+    string uniq_id = 10;
+    int64 synchronized_at = 11;
+}

@@ -1,0 +1,28 @@
+syntax = "proto3";
+package mokapos;
+
+message ItemVariant {
+    int64 id = 1;
+    string name = 2;
+    string sku = 3;
+    double price = 4;
+    int64 in_stock = 5;
+    sint32 stock_alert = 6;
+    sint32 position = 7;
+    int64 item_id = 8;
+    bool is_deleted = 9;
+    int64 created_at = 10;
+    int64 updated_at = 11;
+    sint32 add_inventory = 12;
+    bool track_stock = 13;
+    bool alert = 14;
+    int64 cogs = 15;
+    int64 synchronized_at = 16;
+    int64 last_modified = 17;
+    int64 outlet_id = 18;
+    string guid = 19;
+    string uniq_id = 20;
+    bool track_cogs = 21;
+    bool is_saved = 22;
+    bool is_recipe = 23;
+}

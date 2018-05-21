@@ -1,0 +1,16 @@
+syntax = "proto3";
+package mokapos;
+
+import "mokapos/Item.proto";
+
+message Items {
+    repeated Item items = 1;
+    string next = 2;
+    bool completed = 3;
+    int32 total_pages = 4;
+    int64 total_count = 5;
+}
+
+
+
+
